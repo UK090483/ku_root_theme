@@ -1,9 +1,8 @@
-var browserSync = require("browser-sync").create();
-const path = require("path");
+const browserSync = require("browser-sync").create();
+const { options } = require("./options");
 
 function StartBrowserSync() {
-  const dir = __dirname.split("/");
-  const adress = path.join("localhost:8888", "/hamburg-muss-handeln");
+  const adress = options.serveUrl;
   browserSync.init({
     proxy: adress
   });

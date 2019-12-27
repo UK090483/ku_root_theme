@@ -2,26 +2,15 @@ $small: "only screen and (min-width : 540px)";
 $medium: "only screen and (min-width : 720px)";
 $big: "only screen and (min-width : 1200px)";
 
-@font-face {
-  font-family: "Jost";
-  src: url("fonts/Jost/otf/Jost-400-Book.otf") format("opentype");
-}
-@font-face {
-  font-family: "JostBold";
-  src: url("fonts/Jost/otf/Jost-700-Bold.otf") format("opentype");
-}
-
-$tech-font:  Jost ,sans-serif;
-$personal-font:  Jost ,sans-serif;
-$f3: "Abel", sans-serif;
+$tech-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$personal-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$f3: "helvetica", sans-serif;
 
 $mainc1: rgb(59, 59, 59);
-
 
 $fc1: rgb(44, 44, 44);
 
 $fc2: rgb(255, 255, 255);
-
 
 $boxShadow: 6px 10px 30px rgba(134, 133, 133, 0.459);
 $boxShadowbig: 6px 10px 70px rgba(129, 129, 129, 0.941);
@@ -38,9 +27,8 @@ h4,
 strong,
 h5 {
   font-weight: bold;
-  font-family: JostBold;
+  font-family: $tech-font;
 }
 html {
   font-size: 16px;
 }
-

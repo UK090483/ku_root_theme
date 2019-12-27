@@ -4,7 +4,7 @@ const ignore       = require('gulp-ignore');
 const rimraf       = require('gulp-rimraf');
 const zip          = require('gulp-zip');
 const notify       = require('gulp-notify');
-const project      = 'jmh-prototype-a';
+const project      = 'jmh-prototype-b';
 const runSequence  = require('run-sequence');
 
 

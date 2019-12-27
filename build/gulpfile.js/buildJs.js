@@ -1,18 +1,15 @@
 const { src, dest, watch } = require("gulp");
-const babel = require("gulp-babel");
 const eslint = require("gulp-eslint");
 const webpackStream = require("webpack-stream");
-// var webpack = require("webpack");
-// var webpackConfig = require("../webpack.config");
 
 const { browserSyncInstance } = require("./browserSync");
 
-const source = "js/app.js";
-const WhatchSource = "js/**/*.js";
-const JSDest = "../public/js";
+const { options } = require("./options");
+
+const { _source, _dest, _watch } = options.js;
 
 function buildJs() {
-  return src(source)
+  return src(_source)
     .pipe(
       eslint({
         parserOptions: { ecmaVersion: 6, sourceType: "module" },
@@ -30,10 +27,12 @@ function buildJs() {
         }
       })
     )
-    .pipe(dest(JSDest))
-    //.pipe(browserSyncInstance.stream());
+    .pipe(dest(_dest))
+    .on("end", function() {
+      browserSyncInstance.reload();
+    });
 }
 
-watch([WhatchSource], buildJs);
+watch([_watch], buildJs);
 
 exports.buildJs = buildJs;
