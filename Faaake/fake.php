@@ -6,7 +6,6 @@ require_once 'Faker-master/src/autoload.php';
 $faker = Faker\Factory::create();
 
 
-
 $startDate = $faker->dateTimeBetween($startDate = '-3 years', $endDate = '2 years', $timezone = null);
 
 $ran = $faker->numberBetween($min = 0, $max = 1000) > 400 ? true : false;
@@ -41,7 +40,6 @@ $my_post = array(
         'kubase_event_venue' => $faker->company,
         'kubase_event_link' => $ran2 ? $faker->url : '',
     )
-
 );
 
 

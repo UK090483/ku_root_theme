@@ -32,11 +32,8 @@
 		$logo_subtext = esc_attr(get_theme_mod('jmh_logo_subtext', 'muss handeln'));
 		$menu_width = esc_attr(get_theme_mod('jmh_menu_width', '50'));
 
-		// $kubase_menu_color = get_post_meta($post->ID, 'kubase_menu_color', true);
-		$kubase_menu_color = '';
+		$kubase_menu_color = get_post_meta($post->ID, 'kubase_menu_color', true);
 		$kubase_menu_color_class = $kubase_menu_color ? 'dark' == $kubase_menu_color ? 'main-navigation-dark' : 'main-navigation-bright' : 'main-navigation-dark';
-
-
 		?>
 
 		<header id="masthead" class="site-header">

@@ -162,7 +162,7 @@ require get_template_directory() . '/inc/NavColor.php';
 require get_template_directory() . '/Faaake/fake.php';
 
 
-function kulog($item)
-{
-	error_log(json_encode($item, JSON_PRETTY_PRINT));
-};
+// function kulog($item)
+// {
+// 	error_log(json_encode($item, JSON_PRETTY_PRINT));
+// };

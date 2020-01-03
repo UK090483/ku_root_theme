@@ -2,7 +2,9 @@ $small: "only screen and (min-width : 540px)";
 $medium: "only screen and (min-width : 720px)";
 $big: "only screen and (min-width : 1200px)";
 
-$tech-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
+$tech-font: "Abel", sans-serif;
+
 $personal-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $f3: "helvetica", sans-serif;
 
