@@ -12,7 +12,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-
 	<?php jmh_post_thumbnail(); ?>
 
 	<div class="entry-content">
