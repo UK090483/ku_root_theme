@@ -21,7 +21,7 @@ $kubase_menu_color_class = $kubase_menu_color ? 'dark' == $kubase_menu_color ? '
                 </a>
             </div>
 
-            <div class="nav--links" style="width:<?php echo $menu_width; ?>%">
+            <div class="nav--links" <?php echo 'style="width:' . $menu_width . '%"'; ?>>
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'main-menu',
