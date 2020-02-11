@@ -1,16 +1,16 @@
 .site-footer {
-  background-color: rgb(54, 54, 54);
-  color: $fc2;
+  // background-color: rgb(54, 54, 54);
+  color: $fc1;
 
   a {
-    color: $fc2;
+    color: $fc1;
   }
 
   .privacy-policy-link {
-    color: $fc2;
+    color: $fc1;
   }
   .jetpack_widget_social_icons svg {
-    fill: $fc2;
+    fill: $fc1;
   }
 
   .footer-widgets-wrap {
@@ -63,7 +63,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px $fc2 solid;
+    border-top: 4px $fc1 solid;
     padding: 30px 0 20px 0;
   }
 }

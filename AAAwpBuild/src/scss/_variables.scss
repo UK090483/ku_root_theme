@@ -4,7 +4,11 @@ $big: "only screen and (min-width : 1200px)";
 
 @font-face {
   font-family: "lineto";
-  src: url("fonts/lineto-letteratext-light.woff2") format("opentype");
+  src: url("fonts/webfonts/3AF026_0_0.woff") format("woff");
+}
+@font-face {
+  font-family: "hind";
+  src: url("fonts/Hind-Google/Hind-Google/Hind-Light.ttf") format("opentype");
 }
 
 $tech-font: "lineto", sans-serif;
@@ -12,9 +16,9 @@ $tech-font: "lineto", sans-serif;
 $personal-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $f3: "helvetica", sans-serif;
 
-$mainc1: rgb(59, 59, 59);
+$mainc1: rgb(51, 51, 51);
 
-$fc1: rgb(44, 44, 44);
+$fc1: rgb(59, 59, 59);
 
 $fc2: rgb(255, 255, 255);
 
@@ -30,15 +34,27 @@ body {
   color: $fc1;
 }
 
+p {
+  font-family: "hind", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 strong,
 h5 {
-  font-weight: bold;
+  font-weight: 100;
   font-family: $tech-font;
 }
 html {
   font-size: 16px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 3.8rem;
+  letter-spacing: 4.5px;
 }

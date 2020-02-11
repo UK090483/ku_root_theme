@@ -23,6 +23,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+	<div class="site-colored-Background"></div>
+
 	<div id="page" class="site">
 		<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'jmh'); ?></a> -->
 

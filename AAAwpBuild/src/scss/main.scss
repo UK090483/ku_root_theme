@@ -23,13 +23,14 @@
     overflow: hidden;
   }
 }
-
+$bgopacity: 1;
 body {
+  // background-color: rgba(205, 92, 92, $bgopacity);
+
   .site-content {
     // margin-top: 70px;
     transition: margin-top 0.3s ease-in-out;
   }
-
   &.admin-bar {
     .main-navigation {
       top: 0;
@@ -40,8 +41,51 @@ body {
   }
 }
 
+body {
+  .site-colored-Background {
+    z-index: -1;
+    transition: top 0.3s;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 110px;
+    animation-name: bgColor;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  &.body-scrolled {
+    .site-colored-Background {
+      top: 80px;
+    }
+  }
+  &.admin-bar {
+    .site-colored-Background {
+      top: 80px;
+    }
+  }
+}
+@keyframes bgColor {
+  0% {
+    background-color: rgba(205, 92, 92, $bgopacity);
+  }
+  25% {
+    background-color: rgba(205, 184, 92, $bgopacity);
+  }
+  50% {
+    background-color: rgba(92, 205, 126, $bgopacity);
+  }
+  75% {
+    background-color: rgba(92, 118, 205, $bgopacity);
+  }
+  100% {
+    background-color: rgba(205, 92, 177, $bgopacity);
+  }
+}
+
 .site-content {
-  margin: 70px 0 0 0;
+  margin: 110px 0 0 0;
 
   &.site-content-no-menu-space {
     margin: 0;
