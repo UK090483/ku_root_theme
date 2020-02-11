@@ -2,14 +2,14 @@ $small: "only screen and (min-width : 540px)";
 $medium: "only screen and (min-width : 720px)";
 $big: "only screen and (min-width : 1200px)";
 
-@font-face {
-  font-family: "lineto";
-  src: url("fonts/webfonts/3AF026_0_0.woff") format("woff");
-}
-@font-face {
-  font-family: "hind";
-  src: url("fonts/Hind-Google/Hind-Google/Hind-Light.ttf") format("opentype");
-}
+// @font-face {
+//   font-family: "lineto";
+//   src: url("fonts/webfonts/3AF026_0_0.woff") format("woff");
+// }
+// @font-face {
+//   font-family: "hind";
+//   src: url("fonts/Hind-Google/Hind-Google/Hind-Light.ttf") format("opentype");
+// }
 
 $tech-font: "lineto", sans-serif;
 

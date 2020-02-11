@@ -8,3 +8,12 @@ License URI: LICENSE
 Text Domain: jmh
 GitHub Theme URI: https://github.com/afragen/test-child
 */
+
+@font-face {
+  font-family: "lineto";
+  src: url("fonts/webfonts/3AF026_0_0.woff") format("woff");
+}
+@font-face {
+  font-family: "hind";
+  src: url("fonts/Hind-Google/Hind-Google/Hind-Light.ttf") format("opentype");
+}
