@@ -61,10 +61,13 @@ if (!function_exists('jmh_setup')) :
 			'caption',
 		));
 
-
+		add_theme_support('editor-styles');
+		add_editor_style(get_template_directory_uri() . '/public/css/blockEditor.bundle.css');
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support('customize-selective-refresh-widgets');
+
+
 
 		/**
 		 * Add support for core custom logo.
@@ -125,7 +128,7 @@ function jmh_block_editor_scripts()
 		get_template_directory_uri() . '/public/js/blockEditor.bundle.js',
 		array('wp-blocks')
 	);
-	wp_enqueue_style('jmh_block_editor_js_css', get_template_directory_uri() . '/public/css/blockEditor.bundle.css');
+	// wp_enqueue_style('jmh_block_editor_js_css', get_template_directory_uri() . '/public/css/blockEditor.bundle.css');
 }
 add_action('enqueue_block_editor_assets', 'jmh_block_editor_scripts');
 
