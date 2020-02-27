@@ -28,6 +28,8 @@ body {
   // background-color: rgba(205, 92, 92, $bgopacity);
 
   .site-content {
+    position: relative;
+    overflow: hidden;
     // margin-top: 70px;
     transition: margin-top 0.3s ease-in-out;
   }
@@ -42,18 +44,7 @@ body {
 }
 
 body {
-  .site-colored-Background {
-    z-index: -1;
-    transition: top 0.3s;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 110px;
-    animation-name: bgColor;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
+  background-color: $site-bg-color;
 
   &.body-scrolled {
     .site-colored-Background {

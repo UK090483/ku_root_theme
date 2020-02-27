@@ -1,39 +1,18 @@
-/* @font-face {
-    font-family: "Jost";
-    src: url("../css/fonts/Jost/otf/Jost-400-Book.otf") format("opentype");
-  }
-  @font-face {
-    font-family: "JostBold";
-    src: url("../css/fonts/Jost/otf/Jost-700-Bold.otf") format("opentype");
-  } */
-
-/* .editor-styles-wrapper * {
-  font-family: Jost;
-} */
-
-.editor-styles-wrapper h1,
-.editor-styles-wrapper h2,
-.editor-styles-wrapper h3,
-.editor-styles-wrapper h4,
-.editor-styles-wrapper strong,
-.editor-styles-wrapper h5 {
-  font-weight: bold;
-  font-family: JostBold;
-}
+@import "../scss/font";
 
 @media (min-width: 768px) {
   .wp-block {
     max-width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1000px) {
   .wp-block {
-    max-width: 970px;
+    max-width: 1000px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .wp-block {
-    max-width: 1170px;
+    max-width: 1398px;
   }
 }
 

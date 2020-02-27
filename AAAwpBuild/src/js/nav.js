@@ -1,4 +1,4 @@
-var no_mobile_from = 840;
+var no_mobile_from = 1500;
 var add_scrolled_from = 50;
 var nav_mob = document.querySelector(".nav--mobile");
 var body = document.querySelector("body");
