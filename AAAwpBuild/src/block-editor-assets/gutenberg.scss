@@ -15,22 +15,3 @@
     max-width: 1398px;
   }
 }
-
-.is-style-jmh-text-color {
-  background-image: linear-gradient(to right, #009ee0 0%, #53b278 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.is-style-jmh-button-color .wp-block-button__link {
-  background: linear-gradient(-45deg, #009ee0, #53b278);
-}
-
-.is-style-jmh-gallery .blocks-gallery-item figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.is-style-jmh-gallery .blocks-gallery-item figure img {
-  max-width: 150px;
-}
