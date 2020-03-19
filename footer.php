@@ -67,26 +67,48 @@
 			</div>
 
 
-
-
-
 		</div><!-- footer-widgets-wrap -->
-	<?php endif; ?>
+	<?php endif;
+	?>
 
 
-	<div class="site-info container">
+	<div class="container">
 		<?php
-		if (function_exists('the_privacy_policy_link')) {
-			the_privacy_policy_link('<div class="flex-center footer-privacy-policy-link-wrapper">', '</div>');
-		}
+		$lastposts = get_posts(array(
+			'title'    => 'footer',
+			'post_type'      => 'page'
+		));
 		?>
 
-		<?php $blog_info = get_bloginfo('name'); ?>
-		<?php if (!empty($blog_info)) : ?>
-			<div class="flex-center footer-site-name">&copy <?php bloginfo('name'); ?></div>
-		<?php endif; ?>
+		<?php
+		if ($lastposts) {
 
+			foreach ($lastposts as $post) :
+				setup_postdata($post); ?>
+
+				<?php the_content(); ?>
+		<?php
+			endforeach;
+			wp_reset_postdata();
+		}
+
+		?>
+
+		<div class="site-info ">
+			<?php
+			if (function_exists('the_privacy_policy_link')) {
+				the_privacy_policy_link('<div class="flex-center footer-privacy-policy-link-wrapper">', '</div>');
+			}
+			?>
+
+			<?php $blog_info = get_bloginfo('name'); ?>
+			<?php if (!empty($blog_info)) : ?>
+				<div class="flex-center footer-site-name">&copy <?php bloginfo('name'); ?></div>
+			<?php endif; ?>
+		</div>
 	</div><!-- .site-info -->
+
+
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

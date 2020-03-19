@@ -1,17 +1,8 @@
 @import "../scss/font";
 
-@media (min-width: 768px) {
-  .wp-block {
-    max-width: 750px;
-  }
+.wp-block {
+  max-width: 1398px;
 }
-@media (min-width: 1000px) {
-  .wp-block {
-    max-width: 1000px;
-  }
-}
-@media (min-width: 1500px) {
-  .wp-block {
-    max-width: 1398px;
-  }
+[data-align="full"] {
+  max-width: unset;
 }
