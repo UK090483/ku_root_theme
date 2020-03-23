@@ -1,6 +1,6 @@
 <?php
 $logo_stadt = esc_attr(get_theme_mod('jmh_logo_stadt', 'Deine Stadt'));
-$logo_subtext = esc_attr(get_theme_mod('jmh_logo_subtext', 'muss handeln'));
+$logo_subtext = esc_attr(get_theme_mod('ku_base_logo_subtitle', 'subtitle'));
 $menu_width = esc_attr(get_theme_mod('jmh_menu_width', '50'));
 
 $kubase_menu_color = get_post_meta($post->ID, 'kubase_menu_color', true);
@@ -31,7 +31,7 @@ $kubase_menu_color_class = $kubase_menu_color ? 'dark' == $kubase_menu_color ? '
                 </svg>
 
 
-                <h1><?php echo $logo_stadt; ?></h1>
+                <h1><?php echo $logo_subtext; ?></h1>
 
             </a>
 
