@@ -101,7 +101,7 @@ function jmh_content_width()
 add_action('after_setup_theme', 'jmh_content_width', 0);
 
 
-// require get_template_directory() . '/customizer/init.php';
+require get_template_directory() . '/customizer/init.php';
 
 
 /**
@@ -162,19 +162,6 @@ require get_template_directory() . '/inc/footerwidgets.php';
 
 require get_template_directory() . '/inc/NavColor.php';
 
-// function enqueue_files()
-// {
-// 	$dirJS = new DirectoryIterator(get_stylesheet_directory() . '/public/js/');
-
-// 	foreach ($dirJS as $file) {
-
-// 		if (pathinfo($file, PATHINFO_EXTENSION) === 'ttf' || pathinfo($file, PATHINFO_EXTENSION) === 'woff') {
-
-// 			wp_enqueue_script(basename($file), get_template_directory_uri() . '/public/js/' . basename($file), null, null, true);
-// 		}
-// 	}
-// };
-// add_action('wp_enqueue_scripts', 'enqueue_files');
 
 
 function kulog($item)

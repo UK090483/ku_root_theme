@@ -39,7 +39,6 @@
 		<?php
 		$kubase_menu_space = get_post_meta($post->ID, 'kubase_menu_space', true);
 		$kubase_menu_space_class = $kubase_menu_space ? 'no' == $kubase_menu_space ? 'site-content-no-menu-space' : '' : '';
-
 		?>
 
 		<div id="content" class="site-content <?php echo $kubase_menu_space_class ?>">
