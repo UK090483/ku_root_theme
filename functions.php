@@ -101,7 +101,7 @@ function jmh_content_width()
 add_action('after_setup_theme', 'jmh_content_width', 0);
 
 
-require get_template_directory() . '/customizer/init.php';
+require get_template_directory() . '/customizer/init2.php';
 
 
 /**
